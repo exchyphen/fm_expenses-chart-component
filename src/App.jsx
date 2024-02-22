@@ -4,15 +4,19 @@ import "./App.css";
 import LogoImg from "./assets/images/logo.svg";
 import Bar from "./components/bar";
 
+import JSON_WeeklyData from "../data.json";
+
 function App() {
   const [weekData, setWeekData] = useState(undefined);
   const [barGraphData, setBarGraphData] = useState("loading");
 
   // load json data
   useEffect(() => {
-    fetch("data.json")
-      .then((response) => response.json())
-      .then((data) => setWeekData(data));
+    // fetch("./data.json")
+    //   .then((response) => response.json())
+    //   .then((data) => setWeekData(data));
+
+    setWeekData(JSON_WeeklyData);
   }, []);
 
   const createBarGraph = (weekData) => {
