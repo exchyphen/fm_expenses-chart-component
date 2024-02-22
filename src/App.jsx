@@ -10,7 +10,7 @@ function App() {
 
   // load json data
   useEffect(() => {
-    fetch("./data.json")
+    fetch("data.json")
       .then((response) => response.json())
       .then((data) => setWeekData(data));
   }, []);
