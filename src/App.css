@@ -1,0 +1,115 @@
+main {
+  min-width: 500px;
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* balance */
+
+.total-balance-container {
+  width: 100%;
+  height: 120px;
+  background: var(--soft-red);
+  border-radius: 10px;
+  color: var(--very-pale-orange);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.balance-number {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* spending */
+
+.total-spending-container {
+  width: 100%;
+  background: var(--very-pale-orange);
+  border-radius: 10px;
+  color: var(--dark-brown);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 2rem;
+
+}
+
+/* week */
+
+.weekly-spending-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-brown);
+}
+
+.weekly-spending-container {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* month */
+
+.total-month-container {
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;;
+  align-items: flex-end;
+  border-top: 1px solid var(--cream);
+  padding-top: 1.5rem;
+}
+
+.month-text {
+  color: var(--medium-brown);
+}
+
+.month-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.delta-container {
+  text-align: end;
+}
+
+.delta-number {
+  font-weight: 700;
+}
+
+.delta-text {
+  color: var(--medium-brown);
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    min-width: 375px;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .balance-number {
+    font-size: 1.5rem;
+  }
+
+  .month-number {
+    font-size: 2rem;
+  }
+
+  .total-spending-container {
+    padding: 1rem;
+  }
+
+  .weekly-spending-container {
+    height: 220px;
+  }
+}

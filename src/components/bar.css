@@ -1,0 +1,54 @@
+.bar-container {
+    height: 100%;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.amount {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background: var(--dark-brown);
+    color: var(--very-pale-orange);
+    border-radius: 5px;
+}
+
+.bar {
+    width: 55px;
+    border-radius: 5px;
+    background: var(--soft-red);
+}
+
+.highlight {
+    background: var(--cyan);
+}
+
+.bar:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.day-title {
+    color: var(--medium-brown);
+}
+
+@media screen and (max-width: 500px) {
+    .bar-container {
+        width: 45px;
+        font-size: 0.7rem;
+        gap: 10px;
+    }
+
+    .bar {
+        width: 35px;
+    }
+
+    .amount {
+        font-size: 0.7rem;
+        padding: 5px 2px;
+    }
+}
